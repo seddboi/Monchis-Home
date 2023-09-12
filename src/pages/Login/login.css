@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.password-input {
+		@apply m-2 border-y-2 border-first text-fifth h-8;
+	}
+
+	.password-input:focus {
+		@apply outline-0;
+	}
+}

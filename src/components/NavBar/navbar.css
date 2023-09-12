@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.navBtns {
+		@apply inline-block relative;
+	}
+
+	.navBtns::after {
+		@apply content-[''] absolute w-full scale-x-0 h-[2px] bottom-0 left-0 origin-bottom-right transition-transform duration-300 bg-third;
+	}
+
+	.navBtns:hover::after {
+		@apply scale-x-100 origin-bottom-left;
+	}
+}
