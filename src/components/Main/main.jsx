@@ -4,7 +4,7 @@ export function Main() {
 	// useEffect(() => {}, []);
 	return (
 		<div>
-			<div className="w-full h-[70vh] flex flex-col justify-center">
+			<div className="w-full h-screen flex flex-col justify-center">
 				<h6 className="opacity-0 font-[ILoveGlitter] text-5xl sm:text-7xl text-center sm:text-left sm:ml-10 text-second mb-10 animate-fadeIn animation-delay-1000">
 					Monica Grace...
 				</h6>
