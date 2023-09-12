@@ -21,6 +21,9 @@ module.exports = {
 				fourth: '#92b7a0',
 				fifth: '#9abeaf',
 			},
+			animationDelay: {
+				2500: '2500ms',
+			},
 			transitionDelay: {
 				custom: '120ms',
 			},
@@ -28,7 +31,7 @@ module.exports = {
 				400: '400ms',
 			},
 			animation: {
-				fadeIn: 'fadeIn 1.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
+				fadeIn: 'fadeIn 1.5s cubic-bezier(0.465, 0.183, 0.153, 0.946) forwards',
 				fadeOut: 'fadeOut 1.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
 				menu: 'transform .3s cubic-bezier(0, .52, 0, 1)',
 				slideOutRight: 'slideOutRight 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
@@ -54,5 +57,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss-animation-delay')],
 };
