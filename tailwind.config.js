@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{html,js,jsx, tsx}'],
+	content: ['./src/**/*.{html,js,jsx, tsx}', './node_modules/tw-elements/dist/js/**/*.js'],
 	theme: {
 		extend: {
 			fontFamily: {
@@ -57,5 +57,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animation-delay')],
+	plugins: [require('tailwindcss-animation-delay'), require('tw-elements/dist/plugin.cjs')],
 };

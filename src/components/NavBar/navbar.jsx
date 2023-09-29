@@ -33,7 +33,7 @@ export function NavBar() {
 
 	return (
 		<div className="w-full fixed top-0 left-0 z-10">
-			<div className="pl-6 pr-3 py-8 flex items-center text-third bg-first text-mobile shadow-lg shadow-gray-300">
+			<div className="pl-6 pr-3 py-4 sm:py-7 flex items-center text-third bg-first text-mobile shadow-lg shadow-gray-300">
 				<div className="flex grow justify-start">
 					<p>{isBDAY ? 'Happy Birthday Monchi 🎂' : 'Welcome Monchi 🦋'}</p>
 				</div>

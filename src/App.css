@@ -5,3 +5,17 @@
 #root {
 	text-align: center;
 }
+
+@layer base {
+	::-webkit-scrollbar {
+		@apply w-[10px];
+	}
+
+	::-webkit-scrollbar-track {
+		@apply bg-first;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply bg-third rounded-full;
+	}
+}
