@@ -12,11 +12,11 @@
 	}
 
 	::-webkit-scrollbar {
-		@apply w-[10px];
+		@apply w-[12px];
 	}
 
 	::-webkit-scrollbar-track {
-		@apply bg-first;
+		@apply bg-second;
 	}
 
 	::-webkit-scrollbar-thumb {
