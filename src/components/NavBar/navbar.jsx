@@ -1,11 +1,16 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { isMBD } from '../../utils/isMBD';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { RxCross2 } from 'react-icons/rx';
+import { useNavigate } from 'react-router-dom';
 import './navbar.css';
 
 export function NavBar() {
 	const [isBDAY, setIsBDAY] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+	const navigate = useNavigate();
 
 	const handleMenuOpen = () => {
 		setMenuOpen(true);
@@ -40,18 +45,34 @@ export function NavBar() {
 				{windowWidth >= 640 ? (
 					<ul className="flex">
 						<li className="mx-3">
-							<button className="navBtns">About Her</button>
+							<button
+								className="navBtns"
+								onClick={() => {
+									navigate('/home');
+								}}
+							>
+								Home
+							</button>
+						</li>
+						<li className="mx-3">
+							<button
+								className="navBtns"
+								onClick={() => {
+									navigate('/about');
+								}}
+							>
+								About Her
+							</button>
 						</li>
 						<li className="mx-3">
 							<button className="navBtns">Fact Generator</button>
 						</li>
-						<li className="mx-3">
-							<button className="navBtns">Quiz</button>
-						</li>
 					</ul>
 				) : (
 					<div className="flex justify-end">
-						<i className="box sm:hidden fa-solid fa-bars fa-xl cursor-pointer" onClick={handleMenuOpen}></i>
+						<i className="box sm:hidden cursor-pointer" onClick={handleMenuOpen}>
+							<AiOutlineMenu size={30} />
+						</i>
 					</div>
 				)}
 			</div>
@@ -60,20 +81,36 @@ export function NavBar() {
 				className={
 					`${windowWidth >= 640 ? 'hidden ' : ''}` +
 					`${menuOpen ? 'translate-x-0 ' : 'translate-x-[-100vw] '}` +
-					'fixed top-0 left-0 w-screen h-screen text-mobile flex flex-col text-third bg-first transition-transform duration-300 ease-[cubic-bezier(0, .52, 0, 1)] pt-6'
+					'fixed top-0 left-0 w-screen h-screen text-mobile flex flex-col text-third bg-first transition-transform duration-300 ease-[cubic-bezier(0, .52, 0, 1)] pt-4'
 				}
 			>
-				<div className="w-full h-10 flex justify-end items-center pr-3 pt-4 mb-4 cursor-pointer">
-					<i className="box fa-solid fa-x fa-xl" onClick={handleMenuClose}></i>
+				<div className="w-full h-10 flex justify-end items-center pr-3 mb-4 cursor-pointer">
+					<i className="box" onClick={handleMenuClose}>
+						<RxCross2 size={30} />
+					</i>
 				</div>
 				<div className="flex justify-start p-3">
-					<button className="hover:underline cursor-pointer">About her</button>
+					<button
+						className="hover:underline cursor-pointer"
+						onClick={() => {
+							navigate('/home');
+						}}
+					>
+						Home
+					</button>
+				</div>
+				<div className="flex justify-start p-3">
+					<button
+						className="hover:underline cursor-pointer"
+						onClick={() => {
+							navigate('/about');
+						}}
+					>
+						About her
+					</button>
 				</div>
 				<div className="flex justify-start p-3">
 					<button className="hover:underline cursor-pointer">Fact Generator</button>
-				</div>
-				<div className="flex justify-start p-3">
-					<button className="hover:underline cursor-pointer">Quiz</button>
 				</div>
 			</div>
 		</div>
