@@ -1,11 +1,11 @@
 import React from 'react';
 import { Layout } from '../../components/layout/layout';
-import { Main } from '../../components/Main/main';
 
-export function LandingPage() {
+export function AboutHer() {
 	return (
 		<Layout>
-			<Main />
+			<div className="h-[62px] sm:h-[86px]"></div>
+			<div>About her</div>
 		</Layout>
 	);
 }
