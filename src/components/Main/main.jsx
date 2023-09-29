@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ImageCarousel } from '../Carousel/carousel';
 import { imagesObj } from '../../utils/imageDetails';
 
