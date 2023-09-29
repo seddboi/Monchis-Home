@@ -18,28 +18,28 @@ export function Main() {
 				</h6>
 			</div>
 
-			<div className="w-full h-screen flex flex-col md:flex-row justify-center items-center px-5">
+			<div className="w-full h-screen min-h-[700px] flex flex-col md:flex-row justify-center items-center px-5">
 				<h6 className="font-[ILoveGlitter] text-4xl md:text-5xl mb-10 mx-5">When you are having fun ...</h6>
 				<ImageCarousel imageProps={imagesObj.havingFun} />
 			</div>
 
-			<div className="w-full h-screen flex flex-col md:flex-row-reverse justify-center items-center px-5">
+			<div className="w-full h-screen min-h-[700px] flex flex-col md:flex-row-reverse justify-center items-center px-5">
 				<h6 className="font-[ILoveGlitter] text-4xl md:text-5xl mb-10 mx-5">When we are out and about ...</h6>
 				<ImageCarousel imageProps={imagesObj.outTogether} />
 			</div>
 
-			<div className="w-full h-screen flex flex-col md:flex-row justify-center items-center px-5">
+			<div className="w-full h-screen min-h-[700px] flex flex-col md:flex-row justify-center items-center px-5">
 				<h6 className="font-[ILoveGlitter] text-4xl md:text-5xl mb-10 mx-5">When you are being a goofball ...</h6>
 				<ImageCarousel imageProps={imagesObj.goofball} />
 			</div>
 
-			<div className="w-full h-screen border-black flex flex-col justify-center items-center">
+			<div className="w-full h-screen min-h-[650px] border-black flex flex-col justify-center items-center">
 				<h6 className="mb-7 font-[ILoveGlitter] text-4xl mx-2 text-second">
-					And will always love <a className="text-5xl sm:text-6xl text-first">you</a>.
+					And I will always love <a className="text-5xl sm:text-6xl text-first">you</a>.
 				</h6>
 				<img
 					src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/disney.jpeg"
-					className="w-10/12 h-auto max-w-xs rounded-md border-8 border-second shadow-lg shadow-gray-400 mb-10"
+					className="w-[300px] sm:w-[400px] md:w-[450px] h-auto rounded-md border-8 border-second shadow-lg shadow-gray-400 mb-10"
 				/>
 				<h6 className="mb-5 font-[ILoveGlitter] text-4xl mx-2 text-second">- Gian</h6>
 			</div>

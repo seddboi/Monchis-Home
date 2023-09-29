@@ -7,6 +7,10 @@
 }
 
 @layer base {
+	html {
+		@apply scroll-smooth;
+	}
+
 	::-webkit-scrollbar {
 		@apply w-[10px];
 	}
