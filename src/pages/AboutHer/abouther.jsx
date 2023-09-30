@@ -6,7 +6,7 @@ export function AboutHer() {
 	return (
 		<Layout>
 			<div className="h-[62px] sm:h-[86px]"></div>
-			<div>
+			<div className="flex justify-center">
 				<Jumbotron />
 			</div>
 		</Layout>
