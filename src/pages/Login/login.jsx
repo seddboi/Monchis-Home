@@ -2,8 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './login.css';
-
-const APP_URL = 'http://localhost:3321';
+import { APP_URL } from '../../App';
 
 export function Login({ setA }) {
 	const [isPVisible, setIsPVisible] = useState(false);
@@ -29,17 +28,22 @@ export function Login({ setA }) {
 	// };
 
 	const checkPassword = async () => {
-		await axios
-			.post(APP_URL + '/password', {
-				password: password,
-			})
-			.then((res) => {
-				setAccessMessage(res.data.message);
-				if (res.data.access) {
-					sessionStorage.setItem('access', res.data.access);
-					setA(res.data.access);
-				}
-			});
+		try {
+			await axios
+				.post(APP_URL + '/password', {
+					password: password,
+				})
+				.then((res) => {
+					setAccessMessage(res.data.message);
+					if (res.data.access) {
+						sessionStorage.setItem('access', res.data.access);
+						setA(res.data.access);
+					}
+				});
+		} catch (err) {
+			console.log(err);
+			setAccessMessage('Error');
+		}
 	};
 
 	// useMemo(() => {

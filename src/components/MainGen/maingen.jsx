@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { APP_URL } from '../../App';
 
 export function MainGen() {
 	const [fact, setFact] = useState('');
 
 	const getFact = () => {
-		axios.get('https://monchis-home-server-production.up.railway.app').then((response) => setFact(response.data.fact));
+		axios.get(APP_URL + '/fact').then((response) => setFact(response.data.fact));
 	};
 
 	return (

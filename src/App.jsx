@@ -8,6 +8,8 @@ import { FactGenerator } from './pages/FactGenerator/factgenerator';
 import { Login } from './pages/Login/login';
 import './App.css';
 
+export const APP_URL = 'https://monchis-home-server-production.up.railway.app';
+
 function App() {
 	const [loading, setLoading] = useState(false);
 	const [a, setA] = useState(false);
