@@ -57,5 +57,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animation-delay'), require('tw-elements/dist/plugin.cjs')],
+	plugins: [require('tailwindcss-animation-delay')],
 };
