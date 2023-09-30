@@ -11,7 +11,7 @@ export function Jumbotron() {
 					className="w-[250px] sm:min-w-[250px] h-auto border-8 border-third rounded-full"
 				/>
 			</div>
-			<div className="sm:w-full text-justify">
+			<div className="sm:w-full text-justify sm:m-5">
 				<p className="indent-5">
 					My girlfriend Monica is truly a wonderful person, and has captured my heart since day one. Her presence in my life
 					continues to bring me joy, love, and happiness, and not a day goes by where I do not feel. I am truly grateful of all of
