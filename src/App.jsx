@@ -4,7 +4,7 @@ import { PrivateRoutes } from './utils/privateroutes';
 import { Preloader } from './components/PreLoader/preloader';
 import { LandingPage } from './pages/LandingPage/landingpage';
 import { AboutHer } from './pages/AboutHer/abouther';
-// import {<ComingSoon />} from
+import { FactGenerator } from './pages/FactGenerator/factgenerator';
 import { Login } from './pages/Login/login';
 import './App.css';
 
@@ -30,7 +30,7 @@ function App() {
 					<Route element={<PrivateRoutes />}>
 						<Route exact path="/home" element={<LandingPage />}></Route>
 						<Route exact path="/about" element={<AboutHer />}></Route>
-						{/* <Route exact path="/factgen" element={<ComingSoon />}></Route> */}
+						<Route exact path="/facts" element={<FactGenerator />}></Route>
 					</Route>
 					<Route exact path="/" element={<Login setA={setA} />}></Route>
 				</Routes>

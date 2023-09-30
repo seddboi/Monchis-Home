@@ -65,7 +65,14 @@ export function NavBar() {
 							</button>
 						</li>
 						<li className="mx-3">
-							<button className="navBtns">Fact Generator</button>
+							<button
+								className="navBtns"
+								onClick={() => {
+									navigate('/facts');
+								}}
+							>
+								Fact Generator
+							</button>
 						</li>
 					</ul>
 				) : (
@@ -110,7 +117,14 @@ export function NavBar() {
 					</button>
 				</div>
 				<div className="flex justify-start p-3">
-					<button className="hover:underline cursor-pointer">Fact Generator</button>
+					<button
+						className="hover:underline cursor-pointer"
+						onClick={() => {
+							navigate('/facts');
+						}}
+					>
+						Fact Generator
+					</button>
 				</div>
 			</div>
 		</div>
