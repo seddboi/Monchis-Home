@@ -22,4 +22,22 @@
 	::-webkit-scrollbar-thumb {
 		@apply bg-third rounded-full;
 	}
+
+	img {
+		@apply object-center object-cover;
+	}
+}
+
+@layer components {
+	.blur-load {
+		@apply bg-cover bg-center rounded-full border-8 border-first;
+	}
+
+	.blur-load.loaded > img {
+		@apply opacity-100 border-0;
+	}
+
+	.blur-load > img {
+		@apply opacity-0 transition-opacity duration-200 ease-in-out;
+	}
 }

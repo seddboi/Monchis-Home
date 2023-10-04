@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout } from '../../components/layout/layout';
 import { Jumbotron } from '../../components/Jumbotron/jumbotron';
 import { useInView } from 'react-intersection-observer';
@@ -11,6 +11,22 @@ export function AboutHer() {
 	const { ref: div5Ref, inView: div5Visible } = useInView({ triggerOnce: true });
 	const { ref: div6Ref, inView: div6Visible } = useInView({ triggerOnce: true });
 	const { ref: div7Ref, inView: div7Visible } = useInView({ triggerOnce: true });
+
+	useEffect(() => {
+		const blurDivs = document.querySelectorAll('.blur-load');
+		blurDivs.forEach((div) => {
+			const img = div.querySelector('img');
+			function loaded() {
+				div.classList.add('loaded');
+			}
+
+			if (img.complete) {
+				loaded();
+			} else {
+				img.addEventListener('load', loaded);
+			}
+		}, []);
+	}, []);
 
 	return (
 		<Layout>
@@ -47,11 +63,14 @@ export function AboutHer() {
 							div2Visible ? 'animate-slideInRight delay-1000' : ''
 						}`}
 					>
-						<img
-							src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-bar_X1siXMn1F?updatedAt=1696031472358"
-							loading="lazy"
-							className="w-[250px] sm:w-[300px] border-first border-8 rounded-full"
-						/>
+						<div className="blur-load bg-[url('https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-outgoing-small_RcuTY57TD?updatedAt=1696404052811')]">
+							<img
+								src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-bar_X1siXMn1F?updatedAt=1696031472358"
+								loading="lazy"
+								className="w-[250px] sm:w-[300px] border-first border-8 rounded-full"
+							/>
+						</div>
+
 						<div>
 							<p className="font-[ILoveGlitter] text-first text-[40px]">She's outgoing</p>
 						</div>
@@ -67,11 +86,14 @@ export function AboutHer() {
 							div3Visible ? 'animate-slideInLeft delay-1000' : ''
 						}`}
 					>
-						<img
-							src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-kind_OoVvBUO2G?updatedAt=1696048138040"
-							loading="lazy"
-							className="w-[250px] sm:w-[300px] border-first border-8 rounded-full"
-						/>
+						<div className="blur-load bg-[url('https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-flowers-small_rX_1QkFK8?updatedAt=1696404016662')]">
+							<img
+								src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-kind_OoVvBUO2G?updatedAt=1696048138040"
+								loading="lazy"
+								className="w-[250px] sm:w-[300px] border-first border-8 rounded-full"
+							/>
+						</div>
+
 						<div>
 							<p className="font-[ILoveGlitter] text-first text-[40px]">She's quirky</p>
 						</div>
@@ -117,11 +139,14 @@ export function AboutHer() {
 							div6Visible ? 'animate-slideInRight delay-1000' : ''
 						}`}
 					>
-						<img
-							src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-kind_T48x_Oa42?updatedAt=1696048193206"
-							loading="lazy"
-							className="w-[250px] sm:w-[300px] border-first border-8 rounded-full"
-						/>
+						<div className="blur-load bg-[url('https://ik.imagekit.io/sp7l57yrpo/mbdpics/cats-kind-small_XRThF5au3?updatedAt=1696403873638')]">
+							<img
+								src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-kind_T48x_Oa42?updatedAt=1696048193206"
+								loading="lazy"
+								className="w-[250px] sm:w-[300px] border-first border-8 rounded-full"
+							/>
+						</div>
+
 						<div className="">
 							<p className="font-[ILoveGlitter] text-first text-[40px]">She's kind</p>
 						</div>
