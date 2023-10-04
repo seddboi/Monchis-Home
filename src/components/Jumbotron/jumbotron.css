@@ -1,1 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer components {
+	.blur-load-single {
+		@apply bg-cover bg-center rounded-full border-8 border-third;
+	}
+
+	.blur-load-single.loaded > img {
+		@apply opacity-100 border-0;
+	}
+
+	.blur-load-single > img {
+		@apply opacity-0 transition-opacity duration-200 ease-in-out;
+	}
+}
