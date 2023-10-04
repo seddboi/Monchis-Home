@@ -39,11 +39,11 @@ export function AboutHer() {
 			</div>
 
 			<div className="flex justify-center sm:text-[18px] py-5">
-				<div id="details-row-container" className="flex flex-col-reverse sm:flex-row bg-primary mb-5 mx-5 max-w-[850px]">
+				<div id="details-row-container" className="flex flex-col-reverse md:flex-row bg-primary mb-5 mx-5 max-w-[850px]">
 					<div
 						ref={div1Ref}
 						id="text-container"
-						className={`flex justify-center items-center bg-second text-first p-5 rounded-lg shadow-md shadow-zinc-400 sm:grow sm:mr-5 ${
+						className={`flex justify-center items-center bg-second text-first p-5 rounded-lg shadow-md shadow-zinc-400 md:grow md:mr-5 ${
 							div1Visible ? 'animate-slideInLeft delay-1000' : ''
 						}`}
 					>
@@ -59,7 +59,7 @@ export function AboutHer() {
 
 					<div
 						ref={div2Ref}
-						className={`flex flex-col justify-center items-center bg-second p-5 mb-5 sm:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
+						className={`flex flex-col justify-center items-center bg-second p-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
 							div2Visible ? 'animate-slideInRight delay-1000' : ''
 						}`}
 					>
@@ -79,10 +79,10 @@ export function AboutHer() {
 			</div>
 
 			<div className="flex justify-center sm:text-[18px] py-5">
-				<div id="details-row-container" className="flex flex-col sm:flex-row mb-5 mx-5 max-w-[850px]">
+				<div id="details-row-container" className="flex flex-col md:flex-row mb-5 mx-5 max-w-[850px]">
 					<div
 						ref={div3Ref}
-						className={`flex flex-col justify-center items-center bg-third p-5 sm:mr-5 mb-5 sm:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
+						className={`flex flex-col justify-center items-center bg-third p-5 md:mr-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
 							div3Visible ? 'animate-slideInLeft delay-1000' : ''
 						}`}
 					>
@@ -117,11 +117,11 @@ export function AboutHer() {
 			</div>
 
 			<div className="flex justify-center sm:text-[18px] py-5">
-				<div id="details-row-container" className="flex flex-col-reverse sm:flex-row bg-primary mb-5 mx-5 max-w-[850px]">
+				<div id="details-row-container" className="flex flex-col-reverse md:flex-row bg-primary mb-5 mx-5 max-w-[850px]">
 					<div
 						ref={div5Ref}
 						id="text-container"
-						className={`flex justify-center items-center bg-fourth text-first p-5 rounded-lg shadow-md shadow-zinc-400 sm:grow sm:mr-5 ${
+						className={`flex justify-center items-center bg-fourth text-first p-5 rounded-lg shadow-md shadow-zinc-400 sm:grow md:mr-5 ${
 							div5Visible ? 'animate-slideInLeft delay-1000' : ''
 						}`}
 					>
@@ -135,7 +135,7 @@ export function AboutHer() {
 
 					<div
 						ref={div6Ref}
-						className={`flex flex-col justify-center items-center bg-fourth p-5 mb-5 sm:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
+						className={`flex flex-col justify-center items-center bg-fourth p-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
 							div6Visible ? 'animate-slideInRight delay-1000' : ''
 						}`}
 					>

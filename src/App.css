@@ -30,7 +30,7 @@
 
 @layer components {
 	.blur-load {
-		@apply bg-cover bg-center rounded-full border-4 border-first;
+		@apply bg-cover bg-center rounded-full border-8 border-first;
 	}
 
 	.blur-load.loaded > img {
