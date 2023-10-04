@@ -24,13 +24,13 @@
 	}
 
 	img {
-		@apply object-center object-cover;
+		@apply w-full block object-center object-cover;
 	}
 }
 
 @layer components {
 	.blur-load {
-		@apply bg-cover bg-center rounded-full border-8 border-first;
+		@apply bg-cover bg-center rounded-full border-4 border-first;
 	}
 
 	.blur-load.loaded > img {

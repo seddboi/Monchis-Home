@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	img {
+		@apply w-full block object-center object-cover;
+	}
+}
+
+@layer components {
+	.blur-load-slider {
+		@apply bg-cover bg-center border-8 border-second rounded;
+	}
+
+	.blur-load-slider.loaded > img {
+		@apply opacity-100 border-0;
+	}
+
+	.blur-load-slider > img {
+		@apply opacity-0 transition-opacity duration-200 ease-in-out;
+	}
+}

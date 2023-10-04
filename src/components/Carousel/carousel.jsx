@@ -30,29 +30,45 @@ export function ImageCarousel({ imageProps }) {
 		resetTimeout();
 		timeoutRef.current = setTimeout(() => {
 			nextSlide();
-		}, 7000);
+		}, 5000);
+
+		const blurDivs = document.querySelectorAll('.blur-load-slider');
+		blurDivs.forEach((div) => {
+			const img = div.querySelector('img');
+			function loaded() {
+				div.classList.add('loaded');
+			}
+
+			if (img.complete) {
+				loaded();
+			} else {
+				img.addEventListener('load', loaded);
+			}
+		}, []);
 	}, [currentIndex]);
 
 	return (
 		<div className="flex flex-col justify-center items-center">
-			<div className="w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] relative mb-5">
+			<div
+				className={`w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] relative mb-5 blur-load-slider bg-[url('${imageProps[currentIndex].smlink}')]`}
+			>
 				<img
 					src={imageProps[currentIndex].link}
 					loading="lazy"
-					className="w-full h-full rounded bc-center bg-cover border-8 border-second flex column justify-between transition-all duration-500 absolute"
+					className="w-full h-full bc-center bg-cover border-8 border-second rounded flex column justify-between transition-all duration-500 absolute"
 				/>
 				<div className="absolute w-full h-full flex justify-between items-center">
 					<button
 						onClick={prevSlide}
 						className="w-[22%] h-full flex justify-center items-center text-white/30 sm:hover:bg-second/30 duration-300"
 					>
-						<AiFillCaretLeft size={30} />
+						<AiFillCaretLeft size={40} />
 					</button>
 					<button
 						onClick={nextSlide}
 						className="w-[22%] h-full flex justify-center items-center text-white/40 sm:hover:bg-second/30 duration-300"
 					>
-						<AiFillCaretRight size={30} />
+						<AiFillCaretRight size={40} />
 					</button>
 				</div>
 			</div>
