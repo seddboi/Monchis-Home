@@ -27,22 +27,27 @@ export function Login({ setA }) {
 	// 	el.classList.replace('animate-fadeIn, animate-fadeOut');
 	// };
 
-	const checkPassword = async () => {
-		try {
-			await axios
-				.post(APP_URL + '/password', {
-					password: password,
-				})
-				.then((res) => {
-					setAccessMessage(res.data.message);
-					if (res.data.access) {
-						sessionStorage.setItem('access', res.data.access);
-						setA(res.data.access);
-					}
-				});
-		} catch (err) {
-			console.log(err);
-			setAccessMessage('Error');
+	const checkPassword = () => {
+		if (password == '') {
+			setAccessMessage('You gotta type something, in you silly goose ;).');
+		} else {
+			try {
+				axios
+					.post(APP_URL + '/password', {
+						password: password,
+					})
+					.then((res) => {
+						console.log(res.data);
+						setAccessMessage(res.data.message);
+						if (res.data.access) {
+							sessionStorage.setItem('access', res.data.access);
+							setA(res.data.access);
+						}
+					});
+			} catch (err) {
+				console.log(err);
+				setAccessMessage('Error');
+			}
 		}
 	};
 
