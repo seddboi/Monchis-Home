@@ -37,7 +37,6 @@ export function Login({ setA }) {
 						password: password,
 					})
 					.then((res) => {
-						console.log(res.data);
 						setAccessMessage(res.data.message);
 						if (res.data.access) {
 							sessionStorage.setItem('access', res.data.access);
