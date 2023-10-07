@@ -6,7 +6,9 @@ export function FactGenerator() {
 	return (
 		<Layout>
 			<div className="h-[60px] sm:h-[86px]"></div>
-			<MainGen />
+			<div className="flex justify-center items-center">
+				<MainGen />
+			</div>
 		</Layout>
 	);
 }

@@ -35,7 +35,6 @@ module.exports = {
 				fadeOut: 'fadeOut 1.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
 				menu: 'transform .3s cubic-bezier(0, .52, 0, 1)',
 				slideOutRight: 'slideOutRight 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
-				customSpin: 'customSpin 3s linear infinite',
 				slideInUp: 'slideInUp 1.5s cubic-bezier(0.465, 0.183, 0.153, 0.946) forwards',
 				slideInRight: 'slideInRight 1.5s cubic-bezier(0.465, 0.183, 0.153, 0.946) forwards',
 				slideInLeft: 'slideInLeft 1.5s cubic-bezier(0.465, 0.183, 0.153, 0.946) forwards',
@@ -52,10 +51,6 @@ module.exports = {
 				slideOutRight: {
 					'100%': { transform: 'translateX(100%)' },
 					'0%': { transform: 'translateX(-16px)' },
-				},
-				customSpin: {
-					'0%': { transform: 'rotate(0deg)' },
-					'100%': { transform: 'rotate(360deg)' },
 				},
 				slideInUp: {
 					'0%': { transform: 'translateY(150vh)', filter: 'blur(6px)' },
