@@ -55,7 +55,7 @@ export function Main() {
 					src="https://ik.imagekit.io/sp7l57yrpo/mbdpics/disney.jpeg"
 					className="w-[300px] sm:w-[400px] md:w-[450px] h-auto rounded-md border-8 border-second shadow-lg shadow-gray-400 mb-10"
 				/>
-				<h6 className="mb-5 font-[ILoveGlitter] text-4xl mx-2 text-second">- Gian</h6>
+				<h6 className="mb-5 font-[ILoveGlitter] text-4xl mx-2 text-second backdrop-blur-xl rounded-xl p-2">- Gian</h6>
 			</div>
 		</div>
 	);
