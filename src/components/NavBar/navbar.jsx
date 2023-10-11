@@ -24,6 +24,10 @@ export function NavBar() {
 		setWindowWidth(window.innerWidth);
 	};
 
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
+
 	useMemo(() => {
 		const current = isMBD();
 		setIsBDAY(current);
@@ -49,6 +53,7 @@ export function NavBar() {
 								className="navBtns"
 								onClick={() => {
 									navigate('/home');
+									scrollToTop();
 								}}
 							>
 								Home
@@ -59,6 +64,7 @@ export function NavBar() {
 								className="navBtns"
 								onClick={() => {
 									navigate('/about');
+									scrollToTop();
 								}}
 							>
 								About Her
@@ -69,6 +75,7 @@ export function NavBar() {
 								className="navBtns"
 								onClick={() => {
 									navigate('/facts');
+									scrollToTop();
 								}}
 							>
 								Fact Generator
@@ -101,6 +108,7 @@ export function NavBar() {
 						className="hover:underline cursor-pointer"
 						onClick={() => {
 							navigate('/home');
+							scrollToTop();
 						}}
 					>
 						Home
@@ -111,6 +119,7 @@ export function NavBar() {
 						className="hover:underline cursor-pointer"
 						onClick={() => {
 							navigate('/about');
+							scrollToTop();
 						}}
 					>
 						About her
@@ -121,6 +130,7 @@ export function NavBar() {
 						className="hover:underline cursor-pointer"
 						onClick={() => {
 							navigate('/facts');
+							scrollToTop();
 						}}
 					>
 						Fact Generator
