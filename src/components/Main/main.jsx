@@ -9,7 +9,7 @@ export function Main() {
 			<div className="w-full h-screen sm:min-h-[600px] flex flex-col justify-center">
 				<div className="w-full flex justify-center sm:justify-start">
 					<h6 className="opacity-0 font-[ILoveGlitter] text-5xl sm:text-6xl md:text-7xl sm:ml-10 text-second mb-10 animate-slideInLeft animation-delay-1000 backdrop-blur backdrop-sepia rounded-lg p-3">
-						MonicaGrace
+						Monica_Grace
 					</h6>
 				</div>
 
@@ -21,7 +21,7 @@ export function Main() {
 
 				<div className="w-full flex justify-center sm:justify-end">
 					<h6 className="opacity-0 font-[ILoveGlitter] text-5xl sm:text-6xl md:text-7xl sm:mr-10 text-second animate-slideInLeft animation-delay-3000 backdrop-blur backdrop-sepia rounded-lg p-3">
-						I|you
+						I_you
 					</h6>
 				</div>
 			</div>

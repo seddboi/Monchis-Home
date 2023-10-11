@@ -72,7 +72,9 @@ export function ImageCarousel({ imageProps }) {
 					</button>
 				</div>
 			</div>
-			<p className="text-third w-[300px] sm:w-[400px] h-[80px]">{imageProps[currentIndex].alt}</p>
+			<div className="flex items-center justify-center w-[300px] sm:w-[400px] h-[80px] backdrop-blur-xl rounded-lg p-2">
+				<p className="text-third">{imageProps[currentIndex].alt}</p>
+			</div>
 		</div>
 	);
 }
