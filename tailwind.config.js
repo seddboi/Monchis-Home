@@ -53,16 +53,16 @@ module.exports = {
 					'0%': { transform: 'translateX(-16px)' },
 				},
 				slideInUp: {
-					'0%': { transform: 'translateY(150vh)', filter: 'blur(6px)' },
-					'100%': { transform: 'translateY(0)', filter: 'blur(0px)' },
+					'0%': { opacity: 1, transform: 'translateY(150vh)', filter: 'blur(6px)' },
+					'100%': { opacity: 1, transform: 'translateY(0)', filter: 'blur(0px)' },
 				},
 				slideInLeft: {
-					'0%': { transform: 'translateX(-150vw)', filter: 'blur(6px)' },
-					'100%': { transform: 'translateX(0)', filter: 'blur(0px)' },
+					'0%': { opacity: 1, transform: 'translateX(-150vw)', filter: 'blur(6px)' },
+					'100%': { opacity: 1, transform: 'translateX(0)', filter: 'blur(0px)' },
 				},
 				slideInRight: {
-					'0%': { transform: 'translateX(200vw)', filter: 'blur(6px)' },
-					'100%': { transform: 'translateX(0)', filter: 'blur(0px)' },
+					'0%': { opacity: 1, transform: 'translateX(200vw)', filter: 'blur(6px)' },
+					'100%': { opacity: 1, transform: 'translateX(0)', filter: 'blur(0px)' },
 				},
 			},
 		},

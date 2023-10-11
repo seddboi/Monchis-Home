@@ -43,7 +43,7 @@ export function AboutHer() {
 					<div
 						ref={div1Ref}
 						id="text-container"
-						className={`flex justify-center items-center bg-second text-first p-5 rounded-lg shadow-md shadow-zinc-400 md:grow md:mr-5 ${
+						className={`opacity-0 flex justify-center items-center bg-second text-first p-5 rounded-lg shadow-md shadow-zinc-400 md:grow md:mr-5 ${
 							div1Visible ? 'animate-slideInLeft delay-1000' : ''
 						}`}
 					>
@@ -59,7 +59,7 @@ export function AboutHer() {
 
 					<div
 						ref={div2Ref}
-						className={`flex flex-col justify-center items-center bg-second p-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
+						className={`opacity-0 flex flex-col justify-center items-center bg-second p-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
 							div2Visible ? 'animate-slideInRight delay-1000' : ''
 						}`}
 					>
@@ -82,7 +82,7 @@ export function AboutHer() {
 				<div id="details-row-container" className="flex flex-col md:flex-row mb-5 mx-5 max-w-[850px]">
 					<div
 						ref={div3Ref}
-						className={`flex flex-col justify-center items-center bg-third p-5 md:mr-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
+						className={`opacity-0 flex flex-col justify-center items-center bg-third p-5 md:mr-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
 							div3Visible ? 'animate-slideInLeft delay-1000' : ''
 						}`}
 					>
@@ -102,7 +102,7 @@ export function AboutHer() {
 					<div
 						ref={div4Ref}
 						id="text-container"
-						className={`flex justify-center items-center bg-third text-first p-5 rounded-lg shadow-md shadow-zinc-400 grow ${
+						className={`opacity-0 flex justify-center items-center bg-third text-first p-5 rounded-lg shadow-md shadow-zinc-400 grow ${
 							div4Visible ? 'animate-slideInRight delay-1000' : ''
 						}`}
 					>
@@ -121,7 +121,7 @@ export function AboutHer() {
 					<div
 						ref={div5Ref}
 						id="text-container"
-						className={`flex justify-center items-center bg-fourth text-first p-5 rounded-lg shadow-md shadow-zinc-400 sm:grow md:mr-5 ${
+						className={`opacity-0 flex justify-center items-center bg-fourth text-first p-5 rounded-lg shadow-md shadow-zinc-400 sm:grow md:mr-5 ${
 							div5Visible ? 'animate-slideInLeft delay-1000' : ''
 						}`}
 					>
@@ -135,7 +135,7 @@ export function AboutHer() {
 
 					<div
 						ref={div6Ref}
-						className={`flex flex-col justify-center items-center bg-fourth p-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
+						className={`opacity-0 flex flex-col justify-center items-center bg-fourth p-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
 							div6Visible ? 'animate-slideInRight delay-1000' : ''
 						}`}
 					>
@@ -157,7 +157,7 @@ export function AboutHer() {
 			<div className="flex justify-center">
 				<div
 					ref={div7Ref}
-					className={`flex justify-center items-center sm:text-[18px] bg-fifth text-first p-5 m-5 rounded-lg shadow-md shadow-zinc-400 max-w-[850px] ${
+					className={`opacity-0 flex justify-center items-center sm:text-[18px] bg-fifth text-first p-5 m-5 rounded-lg shadow-md shadow-zinc-400 max-w-[850px] ${
 						div7Visible ? 'animate-fadeIn delay-1000' : ''
 					}`}
 				>
