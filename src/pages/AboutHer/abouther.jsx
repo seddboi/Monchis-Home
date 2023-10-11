@@ -83,7 +83,7 @@ export function AboutHer() {
 					<div
 						ref={div3Ref}
 						className={`opacity-0 flex flex-col justify-center items-center bg-third p-5 md:mr-5 mb-5 md:mb-0 rounded-lg shadow-md shadow-zinc-400 min-w-[300px] ${
-							div3Visible ? 'animate-slideInLeft delay-1000' : ''
+							div3Visible ? 'animate-slideInRight sm:animate-slideInLeft delay-1000' : ''
 						}`}
 					>
 						<div className="blur-load bg-[url('https://ik.imagekit.io/sp7l57yrpo/mbdpics/monch-flowers-small_rX_1QkFK8?updatedAt=1696404016662')]">
@@ -103,7 +103,7 @@ export function AboutHer() {
 						ref={div4Ref}
 						id="text-container"
 						className={`opacity-0 flex justify-center items-center bg-third text-first p-5 rounded-lg shadow-md shadow-zinc-400 grow ${
-							div4Visible ? 'animate-slideInRight delay-1000' : ''
+							div4Visible ? 'animate-slideInLeft sm:animate-slideInRight delay-1000' : ''
 						}`}
 					>
 						<p className="indent-5 text-justify">
