@@ -20,7 +20,7 @@ export function MainGen() {
 
 	return (
 		<div className="text-second text-[20px] max-w-[850px]">
-			<div className="pt-5 px-5 pb-2 flex flex-col justify-center items-center">
+			<div className="mx-5 pt-5 px-5 pb-2 flex flex-col justify-center items-center backdrop-blur-xl rounded-xl">
 				<h5 className="mb-3">
 					This is the <a className="underline decoration-solid text-third">Monchi Fact Generator</a>.
 				</h5>
@@ -30,7 +30,7 @@ export function MainGen() {
 				</h6>
 				<p>Click the "Generate" to get started.</p>
 			</div>
-			<div className="flex justify-center items-center mb-4">
+			<div className="flex justify-center items-center my-4">
 				<div
 					id="fact-container"
 					className="flex justify-center items-center max-w-[500px] text-[22px] bg-first rounded-md mx-5 slide"
@@ -41,7 +41,7 @@ export function MainGen() {
 				</div>
 			</div>
 
-			<div className="flex justify-center bg-white">
+			<div className="flex justify-center">
 				<button onClick={() => getFact()} className="py-1 px-2 rounded-md text-first bg-third hover:bg-first hover:text-third">
 					Generate
 				</button>
